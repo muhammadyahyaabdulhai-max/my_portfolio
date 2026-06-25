@@ -1,0 +1,273 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{titlesec}
+\geometry{margin=1in}
+\titleformat{\section}{\large\bfseries}{}{0em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{}{0em}{}
+
+\title{\textbf{Developing a Personal Computer Science Portfolio Website}}
+\author{Muhammad Yahya}
+\date{June 2026}
+
+\begin{document}
+
+\maketitle
+
+\section*{Introduction}
+
+The need to have a high online presence of the candidate is of utmost essence as the trend of jobs in the digital sector keeps on changing—especially in the high-tech areas such as computer science. In this regard, within its scope, the project mimics a real situation: opening an application of working student (using professional online portfolio).
+
+This task was not designed purely to illustrate my technical and academic qualifications but to show that I was capable of creating, developing and writing up a fully-fledged portfolio website of my own. This required the incorporation of a number of digital applications such as HTML, CSS, LaTeX, and GitHub Pages that would play a role in developing a professional and static webpage and serving the page publicly.
+
+The end deliverables will be a live site available at \url{https://muhammadyahyaabdulhai-max.github.io/my_portfolio/}, and a GitHub repository with well-organized source code and documentation: \url{https://github.com/muhammadyahyaabdulhai-max/my_portfolio} (Decan, 2022).
+
+This report retrospectively discusses every single stage of the project: design choices, technical implementation, tool usage, GitHub repository organization, advantages, and drawbacks of the current version, and future improvements. It also touches the pedagogical value of the task in terms of readiness to work in the field of software and IT industry.
+
+\section*{Project Objectives and Overview}
+
+The project was aimed at addressing the following goals:
+
+\begin{itemize}
+    \item Create a well-organized and clean portfolio site on your own.
+    \item Introduce personal Curriculum Vitae as a LaTeX format and make it an element of the site.
+    \item Open the project up on GitHub Pages.
+    \item Reflect technical, organizational and aesthetic skills to the final product.
+    \item Present systematically documentation in a report.
+\end{itemize}
+
+The portfolio is a one-page site which has sections arranged in a modular format that simplifies and professionalizes it. These are the following parts:
+
+\begin{itemize}
+    \item Contact information and header
+    \item About Me
+    \item Education
+    \item Skills and Competences
+    \item Languages
+    \item Projects
+    \item Downloadable CV
+\end{itemize}
+
+In each section, I intended to provide a particular value: academic history, technical skills, soft skills, and demonstration of practical experience by mini-projects. The contents are also made in a short description yet descriptive manner that provides sufficient insight and not too overwhelming to the viewer.
+
+The site where the project is located is based on good design concepts such as balance, alignment and access. All the files are structured, commented, and version-controlled on the basis of GitHub. LaTeX CV was created and was developed independently through Overleaf and was hosted on the site through a specific section (Gunawan, 2022).
+
+All in all, the portfolio illustrates my capacity to develop a self-contained personal branding artefact, which reflects initiative, technology fluency, and self-driven learning, which is what should be expected of working students in all things tech-related.
+\section*{Technologies and Tools Used}
+
+The creation of this portfolio project has been based on the combination of contemporary and ground tools that are widely applied in academic and professional web development context. These were HTML5 and CSS3 inside the core stack to develop the front-end of the website, LaTeX to generate a professional curriculum vitae, Git in order to control versions, and GitHub Pages to publish the page publicly. All these technologies have been chosen deliberately to have a balance between the accessibility, educational and professional application.
+
+The tools and platforms that were applied in this project are popular industry-standard tools.
+
+\subsection*{HTML5 and CSS3}
+
+HTML5 was the generic bone of the whole site as it was giving the semantic support to bifurcate the huge amount of content into logical divisions. The new HTML version brings in new tags such as \texttt{<section>}, \texttt{<header>}, \texttt{<nav>}, and \texttt{<footer>} that not only make codes easier to read but also make them more accessible and do better on SEO. The site can be made more comprehensible to screen readers and crawlers when the software utilizes semantic items rather than simple \texttt{<div>} tags. This is an understanding of inclusive design and sets the site to be indexed and be improved in future. Each of the portfolio segments, such as the sections About Me, Skills, Education and Projects were placed into a separate semantic container which enhanced the logical structure and visualizing (Wolf, 2025).
+
+CSS3 has been employed in coordination with HTML in defining the aesthetic representation of the website. The design choices we made were utilization of a consistent color scheme, margin and padding values to add space, hover states to create interactivity and use of hierarchy between the text to differentiate between heading and body text. No such framework as Bootstrap or Tailwind was implemented in this version, but the hand-written CSS shows an awareness of the fundamental styling concepts. The stylesheet was made an external source so that a best practice idea is separated as concern, which makes the content and presentation layers unrelated. This system of modules helps to implement further scaling of the site or its redesign.
+The semantic structure of the site was constructed with the help of HTML5 and it was visually stylized and laid out with CSS3. Logical separation of content and intuitive navigation was put in force by using tags like \texttt{<section>}, \texttt{<header>}, \texttt{<ul>} and \texttt{<a>}.
+
+CSS helped to address the visual presentation such as color scheme, font styling, layout responsiveness, padding/margins, hover effect, and space. Modularity is maintained so that the stylesheet (\texttt{style.css}) is stored separately and is called into the HTML head.
+
+\subsection*{LaTeX}
+
+In order to develop a professional CV, I chose to use LaTeX on the basis of typographic precision of these documents, flexibility in document development and scholarly viability. I wrote in Overleaf and exported the CV as a PDF. The \texttt{.tex} file has logical line divisions and bullet points to be read (Lin, 2024).
+
+\subsection*{GitHub Pages}
+
+The site was hosted publicly on GitHub Pages. The service is a static site hosting service offered by GitHub which enables the deployment of HTML/CSS projects directly out of a repository. I configured GitHub Pages using the “Settings > Pages” tab, selected the root as the directory, and ensured proper placement of the \texttt{index.html} file to complete deployment.
+
+\subsection*{Version Control with Git}
+
+Git was used to track all the changes. This comprised of commits related to layout changes, CV uploads, and architectural enhancements. Version control was used to trace the code, perform rollbacks and document development steps (Calano, 2025).
+
+All these tools provided a perfect combination of ease, scalability and professionalism. They were selected in a specific manner to represent technical capabilities expected of early-career developers and working students entering the digital workforce.
+\section*{Structure and Content of the Website}
+
+The portfolio structure is of one-page design and has clear scrollable parts:
+
+\begin{itemize}
+    \item \textbf{Header:} Shows name, contact information and name of university.
+    \item \textbf{About Me:} A brief sketch of academic concentration, inspiration, and fascinations.
+    \item \textbf{Education:} Time-ordered enumeration of schools and degree programs.
+    \item \textbf{Skills:} Technical and soft skills enumerated for potential recruiters.
+    \item \textbf{Languages:} General skills in Urdu, English and German.
+    \item \textbf{Projects:} Three mini-projects described with brief summaries.
+    \item \textbf{Download CV:} A call-to-action button where the PDF generated using LaTeX can be downloaded.
+\end{itemize}
+
+All the sections are structured using semantic HTML and styled using CSS classes. Emphasis in design was placed on:
+
+\begin{itemize}
+    \item \textbf{Parity:} Ensuring uniform formatting across all sections.
+    \item \textbf{Accessibility:} Using clean fonts and high-contrast colors for readability.
+    \item \textbf{Responsiveness:} Ensuring compatibility with both desktop and mobile browsers.
+\end{itemize}
+
+The ease of navigation is uninterrupted with a small number of scrolls between steps, and users do not need to leave the home page to obtain all relevant information. The layout was tested to fit desktop as well as mobile resolutions.
+
+The color scheme is professional, with shades of blue for emphasis and white for background clarity. Interactive elements such as buttons and hyperlinks were styled with hover effects to signal engagement.
+
+All the content was intentionally curated to ensure the site remains focused and relevant. Unnecessary animations and extraneous imagery were omitted to promote fast loading and minimize user distraction, enhancing the portfolio’s effectiveness and professionalism.
+
+\section*{GitHub Repository Setup}
+
+An important part of this portfolio project was the setup and structure of the GitHub repository, which serves as the codebase of the deployed site, as well as a personal demonstration of my version control patterns. The repository, named \texttt{my-portfolio}, is located at \url{https://github.com/muhammadyahyaabdulhai-max/my_portfolio} and features a clean, modular file structure that supports clarity, maintainability, and professional presentation (Golzadeh, 2022).
+
+All the necessary files to execute the static site are located in the root directory: \texttt{index.html} and \texttt{style.css} manage contents and styling respectively. A separate folder named \texttt{cv/} contains the exported PDF file from LaTeX (\texttt{Yahya_CV.pdf}), which is downloadable via the site's interface. This systematic segregation of assets into logical folders ensures that any user—whether a recruiter or a developer—can easily navigate the repository and quickly understand its purpose.
+
+Additionally, a \texttt{README.md} file is present in the root directory. It describes the aim of the project, outlines the technologies used, and includes instructions on accessing the live version through GitHub Pages. While lightweight in format, the README reflects my understanding of software development practices and documentation standards (Cohen, 2025).
+
+The repository structure was carefully planned to align with best practices in open-source and academic coding standards.
+
+The root folder contains the HTML and CSS files. A subfolder named \texttt{cv} was created to store the downloadable CV. The \texttt{README.md} provides context, usage instructions, and licensing details.
+
+The commit history documents all major additions and edits, including:
+
+\begin{itemize}
+    \item Initial structure setup
+    \item Adding CSS styling
+    \item Uploading LaTeX CV
+    \item Minor design tweaks
+    \item Live deployment configuration
+\end{itemize}
+
+The GitHub Pages setup uses the \texttt{main} branch as the source and the \texttt{/root} directory. No frameworks or external packages were required, which helped keep the deployment lightweight and dependency-free.
+
+Beyond its functional role, the repository also acts as a showcase of my ability to work with Git, structure files logically, and maintain readable code. It stands as a portfolio item in itself—illustrating version control fluency, documentation habits, and deployment readiness. These aspects are not only important academically but also demonstrate my capability to contribute meaningfully in collaborative, real-world software projects.
+\section*{LaTeX CV Integration}
+
+LaTeX was used to develop the CV because of its professional formatting, accuracy, and structured layout. The document was written using Overleaf, a cloud-based LaTeX editor, and includes:
+
+\begin{itemize}
+    \item Personal data (name, contact, date and place of birth)
+    \item Education background (degree programs, institutions, EQF levels)
+    \item Technical, organizational, and critical thinking skills
+    \item CEFR levels of language proficiency
+\end{itemize}
+
+The content is formatted using bold titles, bullet points, and clearly defined section headings. This structure aligns with the expectations of both academic institutions and professional employers, ensuring that the document is easy to read and visually coherent.
+
+After being exported as a PDF, the file was uploaded to the GitHub repository in the \texttt{cv/} directory. The portfolio website contains a prominently placed “Download CV” button that links directly to this PDF, providing quick access to recruiters and reviewers without requiring them to navigate away from the site.
+
+Choosing LaTeX over traditional word processors like Microsoft Word was a conscious decision, signaling an intentional emphasis on typographic control, reproducibility, and professionalism. These characteristics are especially valuable in academic publishing, technical writing, and software documentation—areas in which LaTeX is considered the standard (Lin, 2024).
+
+The integration of a LaTeX-based CV adds significant value to the project. It reflects a level of precision and self-discipline that aligns well with technical fields. Moreover, it ensures that the personal documentation is version-controlled and hosted alongside the website source code, keeping the project cohesive and centralized. This practice mirrors industry workflows and reinforces the academic rigor of the submission.
+\section*{Project Showcase}
+
+To illustrate core competency, three basic projects have been described as part of the portfolio website. Each project is listed under the “Projects” section and includes a brief description to highlight specific skills and learning outcomes.
+
+\subsection*{1. JavaScript Weather App}
+
+This front-end application retrieves weather data by calling a public API. It demonstrates:
+\begin{itemize}
+    \item API integration
+    \item JSON parsing
+    \item Real-time data display using dynamic content rendering
+\end{itemize}
+
+The app serves as an example of practical JavaScript usage and shows my ability to work with external data sources and asynchronous programming concepts.
+
+\subsection*{2. This Portfolio Website}
+
+The portfolio itself is presented as a standalone project. It demonstrates:
+\begin{itemize}
+    \item Semantic HTML structuring
+    \item Modular CSS styling
+    \item Hosting and deployment via GitHub Pages
+\end{itemize}
+
+The website reflects both design and technical implementation skills and serves as a professional personal brand presence.
+
+\subsection*{3. LaTeX CV}
+
+While simple in logic, the LaTeX CV exemplifies:
+\begin{itemize}
+    \item Structured document formatting
+    \item Template-based design using markup language
+    \item Cross-platform compatibility and academic-standard output
+\end{itemize}
+
+The CV project demonstrates documentation skills, attention to layout, and use of industry-standard tools in professional settings.
+
+Each project contributes to a broader portfolio of work. Though relatively simple in scope, they were selected to reflect foundational competencies. Plans are in place to include more advanced and collaborative projects in the future, ensuring the portfolio evolves with my growing expertise. This section was conceptualized to convey a continuous learning mindset and readiness to apply technical knowledge to real-world challenges.
+
+\section*{Critical Reflection: Strengths and Weaknesses}
+
+When looking back at the process of this portfolio project and the result, I can single out several strengths in both the planning and execution stages. One of the strongest aspects is the project’s alignment with professional web development standards. The use of semantic HTML tags and modular CSS not only improved code readability and maintainability but also enhanced the structure, accessibility, and searchability of the website. Each section—such as “About Me,” “Projects,” and “Skills”—was logically grouped to ensure a streamlined user experience that conforms to widely accepted UX/UI principles. Furthermore, the minimalist layout, clean typography, and professional blue-and-white color palette helped create a user interface suitable for both technical and academic audiences.
+
+\subsection*{Strengths:}
+
+\begin{itemize}
+    \item Professional layout and consistent design
+    \item Properly versioned documentation and source code (GitHub + report)
+    \item Use of semantic HTML and accessible CSS styling
+    \item Independently created LaTeX CV with strong formatting
+    \item Successfully deployed and publicly hosted website
+\end{itemize}
+
+Another noteworthy strength lies in the intentional use of development tools. Choosing LaTeX for the CV and GitHub Pages for deployment reflects technical maturity and a desire to meet professional standards. Hosting the site publicly and making the source code available demonstrates openness, transparency, and a willingness to be evaluated—critical characteristics for aspiring software professionals. The GitHub repository structure also mirrors best practices in version control, with modular directories, a clearly written README file, and meaningful commit messages. These technical and organizational strengths are crucial for roles that demand collaborative coding, documentation, and code reviews.
+
+The site’s navigation and user experience were carefully optimized for clarity and minimalism. Users can scroll through the entire content with ease, and no unnecessary clicks or redirects are required to access core content. The lack of heavy assets ensures fast page load time, which contributes to a smoother browsing experience. This reflects an understanding of front-end performance optimization, even within a simple static site.
+
+\subsection*{Weaknesses:}
+
+Despite the project’s strengths, a number of limitations and areas for improvement were identified. One key weakness is the simplicity of the showcased projects. While the Weather App and the portfolio website itself demonstrate core technical skills, they are relatively limited in scope and do not reflect the complexity, scale, or collaborative nature of real-world industry projects. Including a more advanced feature—such as database connectivity, API-driven dashboards, or dynamic content updates—would provide a stronger illustration of problem-solving and full-stack development capabilities.
+
+Another drawback is the current absence of interactivity and responsiveness in the website. While the layout is clean and usable on most devices, the site does not employ media queries to dynamically adapt to smaller screen sizes. This limits its accessibility for mobile users, which is increasingly critical in a mobile-first digital environment. Similarly, the portfolio lacks any form of JavaScript-based interactivity, such as modal popups, contact forms, or animation effects. These features, while not essential, could greatly enhance user engagement and leave a more memorable impression on viewers.
+
+\begin{itemize}
+    \item No interactive elements (e.g., forms, JavaScript animations)
+    \item Lack of responsive design (no mobile-first optimizations)
+    \item Limited depth in technical projects
+\end{itemize}
+
+Although these weaknesses affect the depth and polish of the project, they are understandable within the constraints of time and learning objectives. More importantly, they provide an opportunity for continued development and self-improvement. The project fulfills its primary objective: to create a clean, well-documented, and professional digital portfolio suitable for academic or hiring contexts.
+
+By addressing these gaps in future iterations—such as adding responsiveness, richer projects, and interactive UI features—the portfolio can evolve into a fully-featured representation of my growth as a developer. The ability to reflect critically on these shortcomings and identify actionable steps for improvement is in itself a valuable learning outcome and aligns with the continuous improvement mindset essential in technology careers.
+
+\section*{Future Improvements}
+
+In order to improve the portfolio further and evolve it into a more sophisticated and interactive representation of my skills, I have outlined a number of future development goals.
+
+First and foremost, I plan to implement responsive design using CSS media queries. This will ensure that the website adapts dynamically to different screen sizes, particularly mobile devices. A mobile-first approach is increasingly vital given the prevalence of users accessing content through smartphones and tablets.
+
+Next, I aim to expand the current project showcase by building more advanced applications. These may include full-stack projects that integrate front-end and back-end logic, RESTful API integrations, and possibly database-driven applications. Each of these would better reflect real-world scenarios and display broader technical competencies.
+
+Another major improvement will be the addition of interactive features such as a contact form powered by a service like EmailJS or Netlify Forms. This would allow potential employers or collaborators to reach out directly through the site, enhancing its professional utility.
+
+Other enhancements I intend to include are:
+\begin{itemize}
+    \item Adding GitHub project cards with live previews and code links
+    \item Enabling theme switching (light/dark mode) using JavaScript
+    \item Creating individual project pages with detailed write-ups and screenshots
+    \item Introducing a changelog or blog section to document progress and learning milestones
+\end{itemize}
+
+These additions would significantly increase the functionality, aesthetics, and depth of the portfolio. They would also serve as new learning opportunities—allowing me to practice advanced HTML, CSS, and JavaScript techniques while strengthening my understanding of version control workflows and deployment pipelines.
+
+Ultimately, these enhancements are aimed at transforming the current portfolio from a static, academic artifact into a dynamic and evolving personal brand that reflects ongoing growth in computer science and software engineering.
+\section*{Conclusion}
+
+This project has enabled me to integrate various skills learned throughout the course into a single coherent deliverable. From technical tasks like writing HTML and CSS to managing version control with Git and formatting documents with LaTeX, the process closely mirrored a real-world self-presentation challenge. 
+
+I have successfully designed, developed, and deployed a professional portfolio website, reflecting both my academic background and practical skill set. The final product not only fulfills the course requirements but also serves as a long-term personal branding tool that I can use for internships, job applications, and networking within the field of computer science.
+
+This report has offered an opportunity to critically reflect on the design choices, technology stack, strengths, limitations, and areas for future development. It has reinforced my ability to work independently, solve problems, and communicate my skills through both code and written documentation.
+
+The experience has been both practical and empowering, confirming my ability to create professional-grade web projects from the ground up. It also motivates me to continue evolving my portfolio and skillset in preparation for more advanced roles in the tech industry.
+
+\section*{References}
+
+\begin{enumerate}
+    \item Wolf, J., 2025. \textit{HTML and CSS: The Comprehensive Guide}. Packt Publishing Ltd.
+    \item Cohen, S. and Chugh, R., 2025. Code Style Sheets: CSS for Code. \textit{Proceedings of the ACM on Programming Languages}, 9(OOPSLA1), pp.196–224.
+    \item DuRocher, D., 2021. \textit{HTML \& CSS QuickStart Guide: The Simplified Beginners Guide to Developing a Strong Coding Foundation, Building Responsive Websites, and Mastering the Fundamentals of Modern Web Design}. ClydeBank Media LLC.
+    \item Decan, A., Mens, T., Mazrae, P.R. and Golzadeh, M., 2022, October. On the Use of GitHub Actions in Software Development Repositories. In \textit{2022 IEEE International Conference on Software Maintenance and Evolution (ICSME)} (pp. 235–245). IEEE.
+    \item Calano, D., Nelson, M. and Weigle, M., 2025, May. GitHub Repository Complexity Leads to Diminished Web Archive Availability. In \textit{Proceedings of the 17th ACM Web Science Conference 2025} (pp. 449–459).
+    \item Golzadeh, M., Decan, A. and Mens, T., 2022, March. On the Rise and Fall of CI Services in GitHub. In \textit{2022 IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER)} (pp. 662–672). IEEE.
+    \item Lin, J., 2024. LIVE: LaTeX Interactive Visual Editing. \textit{arXiv preprint} arXiv:2405.06762.
+    \item Gunawan, I.P., 2022. A Short Tutorial on Preparing Academic Writing Using LaTeX.
+\end{enumerate}
